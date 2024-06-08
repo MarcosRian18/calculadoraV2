@@ -14,42 +14,38 @@
         <h1 class="title">By - Marcos Rian</h1>
         <div class="calculadora">
             <h1 class="title-calc">Calculadora</h1>
-
             <table>
                 <tr>
-                    <td><p class="resultado">0</p></td>
-                    <td><button style="--clr:#1e9bff" class="botao">C</button></td>
+                    <td colspan="3"><p id="resultado"></p></td>
+                    <td><button style="--clr:#1e9bff" class="botao" onclick="clean()">C</button></td>
                 </tr>
-
                 <tr>
-                    <td><button style="--clr:#1e9bff" class="botao">7</button></td>
-                    <td><button style="--clr:#1e9bff" class="botao">8</button></td>
-                    <td><button style="--clr:#1e9bff" class="botao">9</button></td>
-                    <td><button style="--clr:#1e9bff" class="botao">+</button></td>
+                    <td><button style="--clr:#1e9bff" class="botao" onclick="insert('7')">7</button></td>
+                    <td><button style="--clr:#1e9bff" class="botao" onclick="insert('8')">8</button></td>
+                    <td><button style="--clr:#1e9bff" class="botao" onclick="insert('9')">9</button></td>
+                    <td><button style="--clr:#1e9bff" class="botao" onclick="insert('+')">+</button></td>
                 </tr>
-
                 <tr>
-                    <td><button style="--clr:#1e9bff" class="botao">4</button></td>
-                    <td><button style="--clr:#1e9bff" class="botao">5</button></td>
-                    <td><button style="--clr:#1e9bff" class="botao">6</button></td>
-                    <td><button style="--clr:#1e9bff" class="botao">-</button></td>
+                    <td><button style="--clr:#1e9bff" class="botao" onclick="insert('4')">4</button></td>
+                    <td><button style="--clr:#1e9bff" class="botao" onclick="insert('5')">5</button></td>
+                    <td><button style="--clr:#1e9bff" class="botao" onclick="insert('6')">6</button></td>
+                    <td><button style="--clr:#1e9bff" class="botao" onclick="insert('-')">-</button></td>
                 </tr>
-
                 <tr>
-                    <td><button style="--clr:#1e9bff" class="botao">1</button></td>
-                    <td><button style="--clr:#1e9bff" class="botao">2</button></td>
-                    <td><button style="--clr:#1e9bff" class="botao">3</button></td>
-                    <td><button style="--clr:#1e9bff" class="botao">X</button></td>
+                    <td><button style="--clr:#1e9bff" class="botao" onclick="insert('1')">1</button></td>
+                    <td><button style="--clr:#1e9bff" class="botao" onclick="insert('2')">2</button></td>
+                    <td><button style="--clr:#1e9bff" class="botao" onclick="insert('3')">3</button></td>
+                    <td><button style="--clr:#1e9bff" class="botao" onclick="insert('*')">X</button></td>
                 </tr>
-
                 <tr>
-                    <td><button style="--clr:#1e9bff" class="botao">.</button></td>
-                    <td><button style="--clr:#1e9bff" class="botao">0</button></td>
-                    <td><button style="--clr:#1e9bff" class="botao">=</button></td>
-                    <td><button style="--clr:#1e9bff" class="botao">/</button></td>
+                    <td><button style="--clr:#1e9bff" class="botao" onclick="insert(',')">,</button></td>
+                    <td><button style="--clr:#1e9bff" class="botao" onclick="insert('0')">0</button></td>
+                    <td><button style="--clr:#1e9bff" class="botao" onclick="calcular()">=</button></td>
+                    <td><button style="--clr:#1e9bff" class="botao" onclick="insert('/')">/</button></td>
                 </tr>
             </table>
         </div>
     </div>
 </body>
+<script src="./js/funcoes.js"></script>
 </html>
